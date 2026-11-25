@@ -1,0 +1,18 @@
+module.exports = {
+  User: require("./User"),
+  RefreshToken: require("./RefreshToken"),
+  Hackathon: require("./Hackathon"),
+  Team: require("./Team"),
+  TeamMember: require("./TeamMember"),
+  HackathonRegistration: require("./HackathonRegistration"),
+  Project: require("./Project"),
+  Judging: require("./Judging"),
+  TeamInvite: require("./TeamInvite"),
+  Wave: require("./Wave"),
+  Submission: require("./Submission"),
+  JudgingRound: require("./JudgingRound"),
+  JudgeAssignment: require("./JudgeAssignment"),
+  RoundScore: require("./RoundScore"),
+  Announcement: require("./Announcement"),
+  AuditLog: require("./AuditLog"),
+};
