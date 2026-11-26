@@ -49,7 +49,7 @@ async function authenticateToken(req, res, next) {
       });
     }
 
-  
+    // always use latest role from database
     req.user = { userId: decoded.userId, role: user.role };
     next();
   } catch (error) {
