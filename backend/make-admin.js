@@ -3,6 +3,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const User = require("./src/models/User");
 
+// usage: node make-admin.js someone@example.com
 const email = (process.argv[2] || "").trim().toLowerCase();
 
 async function main() {
