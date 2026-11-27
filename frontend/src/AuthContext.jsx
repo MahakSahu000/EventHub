@@ -14,7 +14,7 @@ export function AuthProvider({ children }) {
     if (res.ok) setInviteCount(res.data.length);
   }
 
-  // on page reload try silent login with refresh token
+  
   useEffect(() => {
     async function init() {
       if (getRefreshToken()) {
@@ -64,7 +64,6 @@ export function AuthProvider({ children }) {
   );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export function useAuth() {
   return useContext(AuthContext);
 }
